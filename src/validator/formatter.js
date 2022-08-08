@@ -1,17 +1,17 @@
 const trim = function(){
-    let name = "   Sabiha Khan     "
+    let name = "   FunctionUp     "
     name = name.trim()
     console.log(name)
 }
 
 const changeToUpperCase = function() {
-    let upperCaseString = "SaBIHa KHAn"
+    let upperCaseString = "soubhagya samal"
     upperCaseString = upperCaseString.toUpperCase()
     console.log(upperCaseString)
 }
 
 const changetoLowerCase = function() {
-    let lowerCaseString = "SaBIHa KHAn"
+    let lowerCaseString = "SOUBHAGYA SAMAL"
     lowerCaseString = lowerCaseString.toLowerCase()
     console.log(lowerCaseString)
 }

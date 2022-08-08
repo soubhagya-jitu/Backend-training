@@ -13,7 +13,7 @@ const printMonth = function() {
 }
 
 const getBatchInfo = function() {
-    console.log('Plutonium, W4D1, the topic for today is Nodejs')
+    console.log('Plutonium, W3D5, the topic for today is Nodejs')
 }
 
 module.exports.getTodaysDate = printDate
