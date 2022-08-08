@@ -6,7 +6,7 @@ const loggerModule = require('../logger/logger.js')
 const formatterModule = require('../validator/formatter') 
 const helperModule = require('../util/helper')
 const router = express.Router();
-const chunk = require("chunk")
+let lodash = require('lodash')
 
 router.get('/test-me', function (req, res) {
     console.log('My batch is', abc.name)
@@ -18,6 +18,23 @@ router.get('/test-me', function (req, res) {
     helperModule.getTodaysDate()
     helperModule.getCurrentMonth()
     helperModule.printBatchDetails()
+    let result = ["jan","feb","mar","april","may","jun","jul","aug","sep","oct","nov","dec"]
+    let result1 = lodash.chunk(result,4)
+    console.log(result1)
+    let array = [1,3,5,7,9,11,13,15,17,19]
+    let result2 =lodash.tail(array)
+    console.log(result2)
+    let arr1=[2,6,7,4,12]
+    let arr2 =[6,8,4,7,6]
+    let arr3 =[5,6,7,9,12]
+    let arr4 = [6,2,8,4,3]
+    let arr5 = [2,8,3,12,4]
+    let result3 = lodash.union(arr1,arr2,arr3,arr4,arr5)
+    console.log(result3)
+    let obj = [['horror','The Shining'],['drama','Titanic'],['thriller','Shutter Island'],['fantasy','Pans Labyrinth']]
+    let result4 =lodash.fromPairs(obj)
+    console.log(result4)
+
     res.send('My second ever api!')
 });
 
