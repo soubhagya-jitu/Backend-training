@@ -19,7 +19,7 @@ router.get('/test-me', function (req, res) {
     helperModule.getCurrentMonth()
     helperModule.printBatchDetails()
     let result = ["jan","feb","mar","april","may","jun","jul","aug","sep","oct","nov","dec"]
-    let result1 = lodash.chunk(result,4)
+    let result1 = lodash.chunk(result,3)
     console.log(result1)
     let array = [1,3,5,7,9,11,13,15,17,19]
     let result2 =lodash.tail(array)
